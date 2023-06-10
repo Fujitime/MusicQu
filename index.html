@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/ico/favicon-16x16.png"
+    />
+    <title>Zenplayers</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="brand">
+          <h3><span>Zen</span>Player</h3>
+          <img src="./img/ico/favicon-16x16.png" alt="logo" class="logo" />
+        </div>
+        <div class="dark-mode mode">
+          <button id="dark-mode-btn">
+            <img
+              src="./img/night.png"
+              class="yinAndYang"
+              alt=""
+              width="50"
+              height="50"
+            />
+          </button>
+        </div>
+      </nav>
+
+      <div class="navs">
+        <div class="navs-container">
+          <span class="active" data-name="song">Songs</span>
+          <span data-name="album">Albums</span>
+          <span data-name="artist">Artists</span>
+        </div>
+      </div>
+      <div class="volume-control">
+        <img src="./img/volume.png" width="10" alt="" />
+        <input type="range" id="volumeSlider" min="0" max="100" step="1" />
+      </div>
+
+      <div class="content"></div>
+    </div>
+
+    <div class="current-play">
+      <div class="current-info">
+        <figure class="card"></figure>
+      </div>
+
+      <input type="range" id="audioSlider" min="0" max="100" step="1" />
+      <span id="currentTime"></span>
+
+      <div id="btn-container">
+        <img src="./img/btn-back.png" id="btn-back" width="50" alt="" />
+        <div class="btn-play">
+          <img src="./img/ico/favicon-16x16.png" alt="" />
+        </div>
+        <img src="./img/btn-next.png" id="btn-next" width="50" alt="" />
+      </div>
+    </div>
+
+    <div class="loading-col"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
